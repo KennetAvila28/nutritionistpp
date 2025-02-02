@@ -1,7 +1,6 @@
-package com.kennet.nutrisionistapp.domain.entities
+package com.kennet.nutrisionistapp.data.roomEntities
 
 import androidx.room.PrimaryKey
-import java.util.Date
 
 abstract class BaseEntity {
     @PrimaryKey(autoGenerate = true)

@@ -1,8 +1,8 @@
-package com.kennet.nutrisionistapp.domain.daos
+package com.kennet.nutrisionistapp.data.daos
 
 import androidx.room.Dao
 import androidx.room.Query
-import com.kennet.nutrisionistapp.domain.entities.ProductEntity
+import com.kennet.nutrisionistapp.data.roomEntities.ProductEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

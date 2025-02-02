@@ -1,4 +1,4 @@
-package com.kennet.nutrisionistapp.domain.daos
+package com.kennet.nutrisionistapp.data.daos
 
 import androidx.room.Dao
 import androidx.room.Delete

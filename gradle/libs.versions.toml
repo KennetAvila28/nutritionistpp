@@ -1,7 +1,7 @@
 [versions]
 agp = "8.8.0"
 hiltAndroidGradlePlugin = "2.55"
-kotlin = "2.1.0"
+kotlin = "2.1.10"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,12 +10,17 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
 composeBom = "2025.01.01"
 roomVersion = "2.6.1"
-
+mapStructVersion = "1.6.3"
+ioArrow="2.0.1"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+arrow= {module = "io.arrow-kt:arrow-core", version.ref="ioArrow"}
+arrow-corrutines= {module = "io.arrow-kt:arrow-fx-coroutines", version.ref="ioArrow"}
 hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidGradlePlugin" }
 hilt-android-gradle-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroidGradlePlugin" }
+mapstruct = {module = "org.mapstruct:mapstruct", version.ref = "mapStructVersion" }
+mapstruct-compiler = {module = "org.mapstruct:mapstruct-processor", version.ref = "mapStructVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -29,6 +34,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

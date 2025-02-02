@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.kennet.nutrisionistapp.domain.entities.AppointmentEntity
-import com.kennet.nutrisionistapp.domain.entities.ProductEntity
+import com.kennet.nutrisionistapp.data.daos.AppointmentDao
+import com.kennet.nutrisionistapp.data.daos.ProductDao
+import com.kennet.nutrisionistapp.data.roomEntities.AppointmentEntity
+import com.kennet.nutrisionistapp.data.roomEntities.ProductEntity
 
 @Database(
     entities = [
@@ -16,9 +18,10 @@ import com.kennet.nutrisionistapp.domain.entities.ProductEntity
     exportSchema = false
 )
 abstract class AppDatabase:RoomDatabase() {
-    abstract fun productDao():ProductDao
+    abstract fun productDao(): ProductDao
 
-    abstract fun appointmentDao():AppointmentDao
+    abstract fun appointmentDao(): AppointmentDao
+
     companion object{
         @Volatile
         private var INSTANCE:AppDatabase? = null

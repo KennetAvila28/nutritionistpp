@@ -1,7 +1,7 @@
-package com.kennet.nutrisionistapp.domain.entities
+package com.kennet.nutrisionistapp.data.roomEntities
 
 import androidx.room.Entity
-import androidx.room.PrimaryKey
+
 @Entity(tableName = "products")
 data class ProductEntity(
 
@@ -11,4 +11,4 @@ data class ProductEntity(
     val cost: Double,
     val gain: Double,
     val description:String
-):BaseEntity()
+): BaseEntity()

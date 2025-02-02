@@ -55,6 +55,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.hilt.android.gradle.plugin)
+    implementation(libs.mapstruct)
+    implementation(libs.arrow)
+    implementation(libs.arrow.corrutines)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -63,6 +66,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     kapt(libs.hilt.android.gradle.compiler)
+    kapt(libs.mapstruct.compiler)
 }
 
 kapt{
